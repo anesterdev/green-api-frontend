@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Green-API API calls solution. Self-hosted, though.">
+    <meta name="keywords" content="GreenAPI, Green-API, Alexander Nester, ANester, anestercommprod">
+    <meta name="author" content="github@anestercommprod">
+
+    <title>Green-API Interface | NodeJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+<div class="browser-frame">
+    <div class="jsWarning">
+        <h1>WARNING! <span>JavaScript</span> has been disabled.</h1>
+        <h2>We ain't gonna work this way.</h2>
+    </div>
+    <div class="browser-header">
+        <div class="browser-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="idInstance" placeholder="idInstance">
+                <input type="text" id="apiTokenInstance" placeholder="ApiTokenInstance">
+            </div>
+
+            <div class="input-group">
+                <button data-action="getSettings">getSettings</button>
+                <button data-action="getStateInstance">getStateInstance</button>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="chatIdSendMessage" placeholder="77771234567">
+                <input type="text" id="message" placeholder="Hello World!">
+                <button data-action="sendMessage">sendMessage</button>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="chatIdSendFile" placeholder="7777234567">
+                <input type="text" id="urlFile" placeholder="https://my-site.com/img/horse.jpg">
+                <button data-action="sendFileByUrl">sendFileByUrl</button>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <p>Response</p>
+            <div class="output-box" id="outputBox">
+                {
+                "idMessage": "3E80C767D097B7C7C030"
+                }
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
